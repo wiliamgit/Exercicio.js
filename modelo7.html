@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nascimento</title>
+</head>
+<body>
+    <h1> DATAS</h1>
+    <div id="resultado"></div>;
+    <div id="name1"></div>;
+    <div id="date1"></div>
+    <div id="name2"></div>;
+    <div id="date2"></div>
+    <script>
+      let nome1 = prompt ("Digite seu nome") 
+      let data1 = Number (prompt ("Digite ano de nasmcimento"))
+      let nome2 = prompt ("Digite seu nome") 
+      let data2 = Number (prompt("Digite ano de nascimento")) 
+      let mensagem 
+
+     if (data1 > data2 ) { 
+        mensagem = (2023 - data1) + " mais novo";
+
+     } else {
+        mensagem = (2023 - data2) + " mais novo";
+    }
+
+     document.getElementById("resultado").innerHTML = mensagem;
+     document.getElementById("name1").innerHTML = nome1;
+     document.getElementById("name2").innerHTML = nome2;
+     document.getElementById("date1").innerHTML = (2023 - data1);
+     document.getElementById("date2").innerHTML =  (2023 - data2);
+
+    </script>
+    
+</body>
+</html>

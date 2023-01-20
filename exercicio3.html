@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carteira de habilitação</title>
+</head>
+<body>
+  <h1> carteira de habilitação</h1>
+  <div id="resul"></div>
+    <script>
+     let resposta = Number(prompt ("Qual sua idade?"))
+     let msg;
+
+     if (resposta >= 18){
+          msg = "você pode tirar sua habilitação."
+        } else{ msg = "que pena voce nao pode tirar sua habilitação."
+    }
+
+ document.getElementById("resul").innerHTML = msg;
+    </script>
+</body>
+</html>
